@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  #header {
+    background-color: #3498db;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #menu-icon {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  #logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #icon {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+
+  
+  #sidebar ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  #sidebar li {
+    padding: 8px;
+  }
+  
+  #sidebar a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    display: block; /* ให้ลิงค์เต็มความกว้างของ Sidebar */
+  }
+  
+  #sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  #container.sidebar-open {
+    margin-left: 250px;
+  }
+  
+  #content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  #bottom-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* Your existing CSS styles */
+
+#profile {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+
+  	/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  width: 100%;
+  background-color: #fff;
+}
+.side-navbar {
+  position: fixed;
+  height: 100vh;
+  width: 260px;
+  background: #460044;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.side-navbar ul {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.side-navbar ul li {
+  width: 100%;
+}
+.side-navbar ul li:hover {
+  background: #8b0084;
+}
+.side-navbar ul li:first-child {
+  margin-bottom: 1rem;
+  background: none;
+}
+.side-navbar ul li a {
+  display: block;
+  width: 100%;
+  display: flex;
+  color: #fff;
+}
+.side-navbar ul li a .icon {
+  min-width: 60px;
+  display: block;
+  font-size: 25px;
+  line-height: 60px;
+  height: 60px;
+  text-align: center;
+}
+.side-navbar ul li a .text {
+  display: block;
+  padding: 0 10px;
+  line-height: 60px;
+  height: 60px;
+  white-space: nowrap;
+}
+.content {
+  position: absolute;
+  width: calc(100% - 260px);
+  left: 260px;
+  min-height: 100vh;
+  transition: 0.5s ease;
+}
+.top-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 20px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+.profile img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#menu-icon {
+  font-size: 34px;
+  cursor: pointer;
+}
+.content.active {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.side-navbar.active {
+  width: 60px;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    left: 0;
+  }
+  .side-navbar {
+    width: 60px;
+    left: -60px;
+  }
+  .content.active {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .side-navbar.active {
+    left: 0;
+  }
+}
+  
+  
