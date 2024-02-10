@@ -6,3 +6,5 @@ menu.onclick = () => {
     sidenavbar.classList.toggle('active');
     content.classList.toggle('active');
 }
+
+
