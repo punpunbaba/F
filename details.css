@@ -1,0 +1,40 @@
+/*cssของdetails*/
+.h1{
+    justify-content: center;
+  }
+  .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-template-columns:repeat(1);
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 5px;
+    background: #a49f9f;
+    width: auto;
+    height: 660px;
+    border-radius: 0.5rem;
+    padding: 5px;
+  
+  }
+  
+  .details-20{
+    padding: 10px 10px;
+    background-color: #000000;
+  }
+  
+  .details-30{
+    padding: 10px 10px;
+    background-color: #460044;
+  }
+  
+  .details-40{
+    padding: 10px 10px;
+    background-color: #460044;
+  }
+  
+  .details-50{
+    padding: 10px 10px;
+    background-color: #460044;
+  }
+  
