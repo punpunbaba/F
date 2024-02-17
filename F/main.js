@@ -135,30 +135,11 @@ function toggleBackgroundColor(element) {
 
 
 }/*ชำระเงิน*/
-document.getElementById('cashPayment').addEventListener('change', function() {
-    var cashDetails = document.getElementById('cashPaymentDetails');
-    var bankTransferDetails = document.getElementById('bankTransferDetails');
-  
-    if (this.checked) {
-      cashDetails.style.display = 'block';
-      bankTransferDetails.style.display = 'none';
-    }
-  });
-  
-  document.getElementById('bankTransferPayment').addEventListener('change', function() {
-    var cashDetails = document.getElementById('cashPaymentDetails');
-    var bankTransferDetails = document.getElementById('bankTransferDetails');
-  
-    if (this.checked) {
-      cashDetails.style.display = 'none';
-      bankTransferDetails.style.display = 'block';
-    }
-  });
-  
-  document.getElementById('paymentForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    // ทำสิ่งที่ต้องการเพิ่มเติมเมื่อกด submit
-  });
-  
+
+document.getElementById("confirmPayment").addEventListener("click", function() {
+    // ทำการ redirect หน้าไปยังหน้าตะกร้า
+    window.location.href = "cart.html"; // แก้ไขตามชื่อไฟล์ของหน้าตะกร้าที่คุณต้องการให้ไป
+});
+
   
   
