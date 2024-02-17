@@ -50,6 +50,7 @@
   width: 100%;
   display: flex;
   color: #fff;
+
 }
 
 .side-navbar ul li a .icon {
@@ -84,6 +85,7 @@
   justify-content: space-between;
   padding: 7px 20px;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  
 }
 
 #menu-icon {
@@ -122,180 +124,70 @@
 }
 
 .header-icon .bx:hover {
-  background: #8a0083;
+  background: #bd46b7;
+  border-radius: 25%;
+}
+
+.profile-box10{
+    text-align: center;
+    margin: auto;
+    padding:46px 1px 1px 1px ;
+    height: 990px;
+
+}
+.pfb{
+    display: flex;
+    flex-direction: column;
+    height: 943px;
+    justify-content: center;
+    background-color: #f7b6f0;   
+    
+}
+
+.h1{
+    font-size: 500px;
+    display: flex;
+
 }
 
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+input{
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 7px;
+    padding: 40px;
+    outline: none;
+    position: relative;
+    font-weight: 500;
+    font-size: x-large;
+    
 }
-
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+input::placeholder{
+    font-style: initial;
+    font-weight: 600;
+    color: #2c2c2c;
+    
 }
-
-.login-container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e8e8e8;
+.number{
+    margin: 10px 0;
 }
-
-.login-main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: #793177;
-  max-height: 450px;
-  width: 400px;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: rgba(59, 0, 130, 0.442) 0px 30px 90px;
+input[type="text"] {
+  width: 600px; /* เปลี่ยนความยาวตามที่ต้องการ */
 }
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  padding: 24px;
-}
-
-/*checkbox to switch from sign up to login*/
-
-#chk {
-  display: none;
-}
-
-/*Login*/
-
-.login {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.login label {
-  margin: 5% 0 5%;
-}
-
-label {
-  color: #fff;
-  font-size: 2rem;
-  justify-content: center;
-  display: flex;
-  font-weight: bold;
-  cursor: pointer;
-  transition: .5s ease-in-out;
-}
-
-.input {
-  width: 100%;
-  height: 40px;
-  font-size: 1rem;
-  background: #e0dede;
-  padding: 10px;
-  margin-top: 15px;
+#confirmButton {
+  background-color: #d232ac;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  outline: none;
-  border-radius: 4px;
-}
-
-/*Register*/
-
-.register {
-  background: #eee;
-  border-radius: 60% / 10%;
-  transition: .8s ease-in-out;
-}
-
-.register label {
-  color: #8b0084;
-  transform: scale(.6);
-}
-
-#chk:checked ~ .register {
-  transform: translateY(-68%);
-}
-
-#chk:checked ~ .register label {
-  transform: scale(1);
-  margin-bottom: .5rem;
-}
-
-#chk:checked ~ .login label {
-  transform: scale(.6);
-}   
-
-/*Button*/
-
-.form button {
-  width: 70%;
-  height: 40px;
-  margin: 15px auto 10%;
-  color: #fff;
-  background: #460044;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: .2s ease-in;
+  font-size: 16px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  z-index: 999; 
 }
 
-.form button:hover {
-  background-color: #8a0083;
-}
-.rec{
-  padding: 100px 10px ;
-  column-gap: 10px;
-  row-gap: 5px;
-  display: grid; /* ใช้ Grid Layout */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 50px)); /* แบ่งคอลัมน์เป็นแนวเดียวกัน */
-  gap: 380px;
-  justify-content: center;
-}
-.lub,.song{
-  display: flex; /* เปลี่ยนเป็น flexbox layout */
-  justify-content: center; /* จัดให้ข้อความอยู่ตรงกลางตามแนวนอน */
-  background: #460044;
-  border-radius: 1rem;
-  color: #fff;
-  font-size: 45px;
-  position: relative;
-  padding: 50px;
-  border: 1px solid #ccc;
-  left: 375px;
-}
-h1{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding: 47px;
-  font-size: xx-large;
-}
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์ */
-  gap: 50px;
-}
-
-.column {
-  padding: 10px;
-}
-h3{
-  text-align: center;
-}
-.checkbox-group {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.checkbox {
-  margin-bottom: 10px;
+#confirmButton:hover {
+  background-color: #bc61d1;
 }
