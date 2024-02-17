@@ -130,4 +130,35 @@ function toggleBackgroundColor(element) {
             columnin.style.backgroundColor = '';
         }
     });
-}
+
+
+
+
+}/*ชำระเงิน*/
+document.getElementById('cashPayment').addEventListener('change', function() {
+    var cashDetails = document.getElementById('cashPaymentDetails');
+    var bankTransferDetails = document.getElementById('bankTransferDetails');
+  
+    if (this.checked) {
+      cashDetails.style.display = 'block';
+      bankTransferDetails.style.display = 'none';
+    }
+  });
+  
+  document.getElementById('bankTransferPayment').addEventListener('change', function() {
+    var cashDetails = document.getElementById('cashPaymentDetails');
+    var bankTransferDetails = document.getElementById('bankTransferDetails');
+  
+    if (this.checked) {
+      cashDetails.style.display = 'none';
+      bankTransferDetails.style.display = 'block';
+    }
+  });
+  
+  document.getElementById('paymentForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // ทำสิ่งที่ต้องการเพิ่มเติมเมื่อกด submit
+  });
+  
+  
+  
